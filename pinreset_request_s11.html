@@ -1,0 +1,58 @@
+<!--{toplogo}-->
+<div class="pageContentInner">
+	<h1 class="pageHeader">PIN request</h1>
+
+<!--{iferrmsg}-->
+	<div class="errormessage">
+<!--{errmsg}-->
+	</div><!--errormessage-->
+<!--{xif}-->
+
+	<div class="form1Part">
+		<form method="post" id="accessibleForm">
+			<fieldset>
+				<legend>
+<!--{enterinfo}-->
+				</legend>
+
+<!--{ifneedpatronname}-->
+				<div class="formEntryArea">
+					<label for="name">
+						<span class="formLabel">
+<!--{nameprompt}-->
+						</span>
+<!--{name}-->
+						<span class="formLabelExample">
+<!--{nameexample}-->
+						</span>
+					</label>
+				</div><!--formEntryArea-->
+<!--{xif}-->
+
+<!--{ifneedpatronverify}-->
+				<div class="formEntryArea">
+					<label for="barcode">
+						<span class="formLabel">
+<!--{barcodeprompt}-->
+						</span>
+<!--{barcode}-->
+						<span class="formLabelExample">
+Type your FULL ID number plus your campus code: ATSU(staff), CMU, CS, HLG, KCOM(students), MACC, MVC, SFCC, STC, TSU, UCM then TAB
+						</span>
+					</label>
+				</div><!--formEntryArea-->
+<!--{xif}-->
+
+<!--{ifextpat}-->
+				<div class="formEntryArea">
+<!--{extpatid}-->
+<!--{extpatpw}-->
+				</div><!--formEntryArea-->
+<!--{xif}-->
+
+<!--{submit}-->
+			</fieldset>
+		</form>
+	</div><!-- form1Part -->
+</div><!-- pageContentInner -->
+<!--{botlogo}-->

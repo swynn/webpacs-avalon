@@ -1,0 +1,28 @@
+.bibDisplayContentMain {
+    width: 60%;
+}
+
+.linkBanner {
+    background-color:#402C61;
+}
+
+.linkBanner .navLeft { margin-top:4px; }
+
+.linkBanner .navRight ul li:first-child { margin-right:0em; margin-left:0em; }
+
+.minHeight {
+    width:1028px;
+}
+
+.pageContentColumn {
+    width:72%;
+}
+
+.pageNavColumn {
+    width:18%
+}
+
+
+.topLogo img {
+    display:block; 
+}
