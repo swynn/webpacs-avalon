@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" /> 
 
-		<title>LANCE Catalog</title>
+		<title>Avalon Catalog</title>
  
 	</head>
 	<body>
@@ -71,11 +71,11 @@
 					</div>
 				
 					<div class="col-md-3">
+						<label for="SORT" class="float-left">Sort:</label>
 						<select name="SORT" class="form-control">
-							<option value="D">Sorted By:</option>
+							<option value="D">Relevance:</option>
 							<option value="DX">Date</option>
 							<option value="AX">Title</option>
-							<option value="D">Relevance</option>
 						</select>
 					</div>
 				</div>
@@ -463,14 +463,14 @@
 			</form>
 				<hr>
 
-<form class="form-horizontal" role="form" action="/search~S11/s" method="get">
+			<form class="form-horizontal" role="form" action="/search~S11/s" method="get">
 
 				<span class="help-block">Enter Search Terms For <strong>Journal, Magazine & Newspaper Title</strong></span>
 			
 				<div class="form-group">
-					<label for="input_title" class="col-md-1 control-label">Title: </label>
+					<label for="input_journal_title" class="col-md-1 control-label">Title: </label>
 					<div class="col-md-8">
-						<input name="SEARCH" type="text" class="form-control" id="input_subject" placeholder="Enter Medical Subject">
+						<input name="SEARCH" type="text" class="form-control" id="input_journal_title" placeholder="Enter Journal, Magazine, or Newspaper Title">
 					</div>
 				</div>
 											
@@ -647,9 +647,9 @@ if (targ.form)
 				<span class="help-block">Enter Search Terms For <strong>Medical Subject</strong></span>
 			
 				<div class="form-group">
-					<label for="input_subject" class="col-md-1 control-label">Medical Subject: </label>
+					<label for="input_medical_subject" class="col-md-1 control-label">Medical Subject: </label>
 					<div class="col-md-8">
-						<input name="SEARCH" type="text" class="form-control" id="input_subject" placeholder="Enter Medical Subject">
+						<input name="SEARCH" type="text" class="form-control" id="input_medical_subject" placeholder="Enter Medical Subject">
 					</div>
 					
 					<div class="col-md-3">
@@ -692,9 +692,9 @@ if (targ.form)
 				<span class="help-block">Enter Search Terms For <strong>Children's Subject</strong></span>
 			
 				<div class="form-group">
-					<label for="input_subject" class="col-md-1 control-label">Children's Subject: </label>
+					<label for="input_childrens_subject" class="col-md-1 control-label">Children's Subject: </label>
 					<div class="col-md-8">
-						<input name="SEARCH" type="text" class="form-control" id="input_subject" placeholder="Enter Children's Subject">
+						<input name="SEARCH" type="text" class="form-control" id="input_childrens_subject" placeholder="Enter Children's Subject">
 					</div>
 					
 					<div class="col-md-3">
@@ -736,460 +736,6 @@ if (targ.form)
 			
 			</div>
 			<!-- /subject search tab -->
-			
-			<div class="tab-pane" id="journal">
-				<!-- <h1>Journal</h1>
-				<p>Journal Journal Journal Journal Journal Journal Journal Journal Journal Journal Journal </p> -->
-				
-		<!-- SEARCH_JOURNAL-->
-		<div id="SEARCH_JOURNAL">
-		<!--              -->			
-		
-			<form class="form-horizontal" role="form" action="/search~S11/l" method="get">
-
-				<span class="help-block">Enter Search Terms For <strong>Journal Title: </strong></span>
-			
-				<div class="form-group">
-					<label for="journal_search" class="col-md-1 control-label">Journal: </label>
-					<div class="col-md-8">
-						<input type="text" id="journal_search" name="SEARCH" value="" class="form-control" placeholder="Enter Journal">
-					</div>
-					
-					<div class="col-md-3">
-					
-						<select name="sortdropdown" id="sortdropdown" class="form-control">
-							<option value="-">System Sorted</option> 
-							<option value="t"> Title</option> 
-							<option value="a"> Author</option> 
-							<option value="c"> Year</option> 
-							<option value="r"> Reverse Year</option> 
-							<option value="n"> Call Number</option> 
-							<option value="m"> Material Type</option> 
-						</select>
-					</div>
-					
-				</div>
-											
-				<div class="form-group">
-					<div class="col-md-offset-1 col-md-11">
-						<button type="submit" name="submit" value="Submit" class="btn btn-default">Search</button>
-					</div>
-				</div>
-
-				<div class="form-group">
-					<div class="col-md-offset-1 col-md-11">
-						Examples:
-						<ul>
-							<li><em>Harvard Business Review</em></li>
-							<li><em>Harvard</em></li>
-							<li><em>Nature</em></li>
-						</ul>
-					</div>
-				</div>
-				
-			</form>
-			
-		<!--               -->
-		</div>
-		<!-- /SEARCH_JOURNAL -->
-				
-			</div> 
-			<!-- /journal search tab -->
-			
-			<div class="tab-pane" id="database">
-				<!-- <h1>Database</h1>
-				<p>Database Database Database Database Database Database Database Database Database Database </p> -->
-				
-		<!-- SEARCH_DATABASES-->
-		<div id="SEARCH_DATABASES">
-		<!--                 -->
-		
-			<form class="form-horizontal" role="form" action="/search~S11/y?" method="get">
-
-				<span class="help-block">Enter Search Terms For <strong>Database Name: </strong></span>
-			
-				<div class="form-group">
-					<label for="input_databasename" class="col-md-1 control-label">Database: </label>
-					<div class="col-md-11">
-						<input id="input_databasename" name=" " type="text" class="form-control" placeholder="Enter Database Name">
-					</div>
-					
-				</div>
-											
-				<div class="form-group">
-					<div class="col-md-offset-1 col-md-11">
-						<button name="submit" value="Submit" type="submit" class="btn btn-default">Search</button>
-					</div>
-				</div>
-				
-			</form>
-		
-			<hr>
-			
-			<form class="form-horizontal" role="form">
-				<span class="help-block">Browse Databases by <strong>Title Name</strong></span>
-				
-				<div class="form-group">
-					<div class="col-md-offset-1 col-md-11">
-						<a href="/search~S11/m?database=a">A</a> | 
-						<a href="/search~S11/m?database=b">B</a> | 
-						<a href="/search~S11/m?database=c">C</a> | 
-						<a href="/search~S11/m?database=d">D</a> | 
-						<a href="/search~S11/m?database=e">E</a> | 
-						<a href="/search~S11/m?database=f">F</a> | 
-						<a href="/search~S11/m?database=g">G</a> | 
-						<a href="/search~S11/m?database=h">H</a> | 
-						<a href="/search~S11/m?database=i">I</a> | 
-						<a href="/search~S11/m?database=j">J</a> | 
-						<a href="/search~S11/m?database=k">K</a> | 
-						<a href="/search~S11/m?database=l">L</a> | 
-						<a href="/search~S11/m?database=m">M</a> | 
-						<a href="/search~S11/m?database=n">N</a> | 
-						<a href="/search~S11/m?database=o">O</a> |  
-						<a href="/search~S11/m?database=p">P</a> |
-						<a>Q</a> | 
-						<a href="/search~S11/m?database=r">R</a> | 
-						<a href="/search~S11/m?database=s">S</a> | 
-						<a href="/search~S11/m?database=t">T</a> | 
-						<a href="/search~S11/m?database=u">U</a> | 
-						<a href="/search~S11/m?database=v">V</a> | 
-						<a href="/search~S11/m?database=w">W</a> | 
-						<a>X</a> | 
-						<a href="/search~S11/m?database=y">Y</a> | 
-						<a>Z</a>
-					</div>
-				</div>
-			</form>
-
-			<hr />
-			
-			<form class="form-horizontal" role="form">
-			<span class="help-block">Browse Databases by <strong>Subject</strong></span>
-			
-			<div class="form-group">
-			<div class="col-md-offset-1 col-md-11">
-			
-			<!-- Arts and Humanities -->
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">Arts and Humanities</h3>
-				</div>
-				<div class="panel-body">
-					<div class="row">
-
-					<div class="col-md-6">
-							<ul>
-								<li><a href="/search~S11/m?Architecture">Architecture</a></li>
-								<li><a href="/search~S11/m?Art">Art</a></li>
-								<li><a href="/search~S11/m?Literature%20and%20Language">Literature and Language</a></li>
-							</ul>
-						</div>
-
-						<div class="col-md-6">
-							<ul>
-								<li><a href="/search~S11/m?Music">Music</a></li>
-								<li><a href="/search~S11/m?Philosophy">Philosophy</a></li>
-								<li><a href="/search~S11/m?Religion">Religion</a></li>
-							</ul>
-						</div>
-						
-					</div>
-
-				</div>
-			</div>
-			<!-- /Arts and Humanities -->
-
-			<!-- Business -->
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">Business</h3>
-				</div>
-				
-				<div class="panel-body">
-					<div class="row">
-
-						<div class="col-md-6">
-							<ul>
-								<li><a href="/search~S11/m?Business%20and%20Economics">Business and Economics</a></li>
-								<li><a href="/search~S11/m?Communication">Communication</a></li>
-								<li><a href="/search~S11/m?Company%20and%20Industry">Company and Industry</a></li>
-							</ul>
-						</div>
-						
-					</div>
-				</div>
-			</div>
-			<!-- /Business -->
-
-			<!-- Education -->
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">Education</h3>
-				</div>
-				
-				<div class="panel-body">
-					<div class="row">
-					
-						<div class="col-md-6">
-							<ul>
-								<li><a href="/search~S11/m?Education">Education</a></li>
-								<li><a href="/search~S11/m?Classroom%20Databases">Classroom Databases</a></li>
-							</ul>
-						</div>
-						
-					</div>
-				</div>
-			</div>
-			<!-- /Education -->
-
-			<!-- General/Multidisciplinary -->
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">General/Multidisciplinary</h3>
-				</div>
-				<div class="panel-body">
-					<div class="row">
-
-						<div class="col-md-6">
-							<ul>
-								<li><a href="/search~S11/m?General">General</a></li>
-								<li><a href="/search~S11/m?Reference%20Resources">Reference Resources</a></li>
-								<li><a href="/search~S11/m?Career%20Information">Career Information</a></li>
-							</ul>
-						</div>
-					
-					</div>
-				</div>
-			</div>
-			<!-- /General/Multidisciplinary -->
-
-			<!-- Health and Medicine -->
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">Health and Medicine</h3>
-				</div>
-				<div class="panel-body">
-					<div class="row">
-
-						<div class="col-md-6">
-							<ul>
-								<li><a href="/search~S11/m?Health%20Sciences%20and%20Medicine">Health Sciences and Medicine</a></li>
-								<li><a href="/search~S11/m?Physical%20Therapy">Physical Therapy</a></li>
-							</ul>
-						</div>
-						
-					</div>
-				</div>
-			</div>
-
-			<!-- History -->
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">History</h3>
-				</div>		
-				<div class="panel-body">
-					<div class="row">
-
-						<div class="col-md-6">
-							<ul>
-								<li><a href="/search~S11/m?History">History</a></li>
-								<li><a href="/search~S11/m?History%20European">History European</a></li>
-								<li><a href="/search~S11/m?History%20Reference">History Reference</a></li>
-							</ul>
-						</div>
-						
-						<div class="col-md-6">
-							<ul>
-								<li><a href="/search~S11/m?History%20United%20States">History United States</a></li>
-							</ul>
-						</div>
-					
-					</div>
-
-				</div>
-			</div>
-			<!-- /History -->
-
-			<!-- Science and Engineering -->
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">Science and Engineering</h3>
-				</div>
-				<div class="panel-body">
-					<div class="row">
-
-						<div class="col-md-6">
-							<ul>
-								<li><a href="/search~S11/m?Biology">Biology</a></li>
-								<li><a href="/search~S11/m?Chemistry">Chemistry</a></li>
-								<li><a href="/search~S11/m?Computer%20Science">Computer Science</a></li>
-								<li><a href="/search~S11/m?Engineering">Engineering</a></li>
-								<li><a href="/search~S11/m?Geology">Geology</a></li>
-							</ul>
-						</div>
-					
-						<div class="col-md-6">
-							<ul>
-								<li><a href="/search~S11/m?Health%20and%20Sport%20Science">Health and Sport Science</a></li>
-								<li><a href="/search~S11/m?Mathematics">Mathematics</a></li>
-								<li><a href="/search~S11/m?Physics">Physics</a></li>
-								<li><a href="/search~S11/m?Science%20and%20Technology">Science and Technology</a></li>
-							</ul>			
-						</div>
-
-					</div>
-				</div>
-			</div>
-			<!-- /Science and Engineering -->
-
-			<!-- Social Science -->
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">Social Science</h3>
-				</div>
-				<div class="panel-body">
-					<div class="row">
-
-						<div class="col-md-6">
-							<ul>
-								<li><a href="/search~S11/m?Anthropology">Anthropology</a></li>
-								<li><a href="/search~S11/m?Criminal%20Justice">Criminal Justice</a></li>
-								<li><a href="/search~S11/m?Ethnic%20Studies">Ethnic Studies</a></li>
-								<li><a href="/search~S11/m?Political%20Science">Political Science</a></li>
-							</ul>
-						</div>
-					
-						<div class="col-md-6">
-							<ul>
-								<li><a href="/search~S11/m?Psychology">Psychology</a></li>
-								<li><a href="/search~S11/m?Sociology">Sociology</a></li>
-								<li><a href="/search~S11/m?Womens%20and%20Gender%20Studies">Womens and Gender Studies</a></li>
-								<li><a href="/search~S11/m?Library%20Science">Library Science</a></li>
-							</ul>			
-						</div>
-
-					</div>
-
-				</div>
-			</div>
-			<!-- /Social Science -->
-			
-			</div>
-			</div>
-			</form>
-		
-		<!--                 -->
-		</div>
-		<!-- /SEARCH_DATABASES-->
-				
-			</div> 
-			<!-- /database search tab -->
-			
-			<div class="tab-pane" id="reserves">
-				<!-- <h1>Reserve</h1>
-				<p>Reserve Reserve Reserve Reserve Reserve Reserve Reserve Reserve Reserve Reserve </p> -->
-				
-		<!-- SEARCH_RESERVE-->
-		<div id="SEARCH_RESERVE">
-		<!--              -->			
-
-			<form class="form-horizontal" role="form" action="/search~S11/p" method="get">
-
-				<span class="help-block">Enter Search Terms For <strong>Professor Name</strong></span>
-			
-				<div class="form-group">
-					<label for="input_input_professor" class="col-md-1 control-label">Professor Name: </label>
-					<div class="col-md-8">
-						<input name="SEARCH" type="text" class="form-control" id="input_professor" placeholder="Enter Professor Name">
-					</div>
-					
-					<div class="col-md-3">
-						<select name="sortdropdown" id="sortdropdown_professor" class="form-control">
-							<option value="-">System Sorted</option> 
-							<option value="t"> Title</option> 
-							<option value="a"> Author</option> 
-							<option value="c"> Year</option> 
-							<option value="r"> Reverse Year</option> 
-							<option value="n"> Call Number</option> 
-							<option value="m"> Material Type</option> 
-						</select>
-					</div>
-					
-				</div>
-											
-				<div class="form-group">
-					<div class="col-md-offset-1 col-md-11">
-						<button name="SUBMIT" type="submit" class="btn btn-default">Search</button>
-					</div>
-				</div>
-
-				<div class="form-group">
-					<div class="col-md-offset-1 col-md-11">
-						Examples:
-						<ul>
-							<li> Ogden </li>
-							<li> ogden, linda </li>
-							<li> ruehlman </li>
-							<li> ruehlmann, Thomas </li>
-						</ul>
-					</div>
-				</div>
-				
-			</form>
-
-			<hr>
-			
-			<form class="form-horizontal" role="form" action="/search~S11/r" method="get">
-
-				<span class="help-block">Enter Search Terms For <strong>Course Name</strong></span>
-			
-				<div class="form-group">
-					<label for="input_course" class="col-md-1 control-label">Course Name: </label>
-					<div class="col-md-8">
-						<input name="SEARCH" type="text" class="form-control" id="input_course" placeholder="Enter Course Name">
-					</div>
-					
-					<div class="col-md-3">
-						<select name="sortdropdown" id="sortdropdown_course" class="form-control">
-							<option value="-">System Sorted</option> 
-							<option value="t"> Title</option> 
-							<option value="a"> Author</option> 
-							<option value="c"> Year</option> 
-							<option value="r"> Reverse Year</option> 
-							<option value="n"> Call Number</option> 
-							<option value="m"> Material Type</option> 
-						</select>
-					</div>
-					
-				</div>
-											
-				<div class="form-group">
-					<div class="col-md-offset-1 col-md-11">
-						<button name="SUBMIT" type="submit" class="btn btn-default">Search</button>
-					</div>
-				</div>
-
-				<div class="form-group">
-					<div class="col-md-offset-1 col-md-11">
-						Examples:
-						<ul>
-							<li>ENG 101</li>
-							<li>BAR EXAM</li>
-							<li>MUSIC THERAPY</li>
-						</ul>
-					</div>
-				</div>
-				
-			</form>
-
-	<!--               -->
-		</div>
-		<!-- /SEARCH_RESERVE -->
-				
-	
-			</div> 
-			<!-- /reserves search tab -->
-			
 			
 			<div class="tab-pane" id="numbers">
 				<!-- <h1>Numbers</h1>
@@ -1249,9 +795,9 @@ if (targ.form)
 				<span class="help-block">Enter Search Terms For <strong>Dewey Call Number</strong></span>
 			
 				<div class="form-group">
-					<label for="input_call_number" class="col-md-1 control-label">Dewey Call Number: </label>
+					<label for="input_dewey_call_number" class="col-md-1 control-label">Dewey Call Number: </label>
 					<div class="col-md-8">
-						<input id="input_call_number" type="text" name="SEARCH" value="" class="form-control" placeholder="Enter Dewey Call Number">
+						<input id="input_dewey_call_number" type="text" name="SEARCH" value="" class="form-control" placeholder="Enter Dewey Call Number">
 					</div>
 					
 					<div class="col-md-3">
