@@ -36,7 +36,7 @@
 			</ul>
 		</div>
 		<div class="visible-sm visible-xs mobile dropdown">
-			<label for="selectNavigation" class="float-left">Search Type:</label>
+			<label for="mobile_drop" class="float-left">Search Type:</label>
 			<select name="selectNavigation" id="mobile_drop" type="button" data-toggle="dropdown" class="mobile form-control btn btn-primary dropdown-toggle" >
 				<option id="mobile_keyword" value="#keyword">Keyword</option>
 				<option id="mobile_author" value="#author">Author</option>
@@ -71,8 +71,8 @@
 					</div>
 				
 					<div class="col-md-3">
-						<label for="SORT" class="float-left">Sort:</label>
-						<select name="SORT" class="form-control">
+						<label for="KwBasicSort" class="float-left">Sort:</label>
+						<select name="SORT" id="KwBasicSort" class="form-control">
 							<option value="D">Relevance:</option>
 							<option value="DX">Date</option>
 							<option value="AX">Title</option>
@@ -162,7 +162,8 @@
 			<div class="form-group">
 				
 				<div class="col-md-3">
-					<select name="fieldLimit1" class="form-control input-sm">
+					<label for="fieldLimit1" class="visuallyhidden"> Field Limit 1 </label>
+					<select name="fieldLimit1" id="fieldLimit1" class="form-control input-sm">
 						<option value="" selected="selected">Any Field:</option>
 						<option value="a:">AUTHOR:</option>
 						<option value="t:">TITLE:</option>
@@ -172,10 +173,12 @@
 				</div>
 				
 				<div class="col-md-6">
-					<input name="searchText1" type="text" class="form-control input-sm" placeholder="Enter Keyword">
+					<label for="searchText1" class="visuallyhidden"> Search Text 1 </label>
+					<input name="searchText1" id="searchText1" type="text" class="form-control input-sm" placeholder="Enter Keyword">
 				</div>
 				
 				<div class="col-md-3">
+					<label for="boolean1" class="visuallyhidden"> Boolean Operator 1 </label>
 					<select name="boolean1" class="form-control input-sm">
 						<option value="%20and%20" selected="selected">And</option>
 						<option value="%20and%20not%20">And not</option>
@@ -190,7 +193,8 @@
 			<div class="form-group">
 				
 				<div class="col-md-3">
-					<select name="fieldLimit2" class="form-control input-sm">
+					<label for="fieldLimit2" class="visuallyhidden"> Field Limit 2 </label>
+					<select name="fieldLimit2" id="fieldLimit2" class="form-control input-sm">
 						<option value="" selected="selected">Any Field:</option>
 						<option value="a:">AUTHOR:</option>
 						<option value="t:">TITLE:</option>
@@ -200,11 +204,13 @@
 				</div>
 				
 				<div class="col-md-6">
-					<input name="searchText2" type="text" class="form-control input-sm" placeholder="Enter Keyword">
+					<label for="searchText2" class="visuallyhidden"> Search Text 2 </label>
+					<input name="searchText2" id="searchText2" type="text" class="form-control input-sm" placeholder="Enter Keyword">
 				</div>
 				
 				<div class="col-md-3">
-					<select name="boolean2" class="form-control input-sm">
+					<label for="boolean2" class="visuallyhidden"> Boolean Operator 2 </label>
+					<select name="boolean2" id="boolean2" class="form-control input-sm">
 						<option value="%20and%20" selected="selected">And</option>
 						<option value="%20and%20not%20">And not</option>
 						<option value="%20or%20">Or</option>
@@ -218,7 +224,8 @@
 			<div class="form-group">
 				
 				<div class="col-md-3">
-					<select name="fieldLimit3" class="form-control input-sm">
+					<label for="fieldLimit3" class="visuallyhidden"> Field Limit 3 </label>
+					<select name="fieldLimit3" id="fieldLimit3" class="form-control input-sm">
 						<option value="" selected="selected">Any Field:</option>
 						<option value="a:">AUTHOR:</option>
 						<option value="t:">TITLE:</option>
@@ -228,11 +235,13 @@
 				</div>
 				
 				<div class="col-md-6">
-					<input name="searchText3" type="text" class="form-control input-sm" placeholder="Enter Keyword">
+					<label for="searchText3" class="visuallyhidden"> Search Text 3 </label>
+					<input name="searchText3" id="searchText3" type="text" class="form-control input-sm" placeholder="Enter Keyword">
 				</div>
 				
 				<div class="col-md-3">
-					<select name="boolean3" class="form-control input-sm">
+					<label for="boolean3" class="visuallyhidden"> Boolean Operator 3 </label>
+					<select name="boolean3" id="boolean3" class="form-control input-sm">
 						<option value="%20and%20" selected="selected">And</option>
 						<option value="%20and%20not%20">And not</option>
 						<option value="%20or%20">Or</option>
@@ -247,7 +256,8 @@
 			<div class="form-group">
 				
 				<div class="col-md-3">
-					<select name="fieldLimit4" class="form-control input-sm">
+					<label for="fieldLimit4" class="visuallyhidden"> Field Limit 4 </label>
+					<select name="fieldLimit4" id="fieldLimit4" class="form-control input-sm">
 						<option value="" selected="selected">Any Field:</option>
 						<option value="a:">AUTHOR:</option>
 						<option value="t:">TITLE:</option>
@@ -257,7 +267,8 @@
 				</div>
 				
 				<div class="col-md-9">
-					<input name="searchText4" type="text" class="form-control input-sm" placeholder="Enter Keyword">
+					<label for="searchText4" class="visuallyhidden"> Search Text 4 </label>
+					<input name="searchText4" id="searchText4" type="text" class="form-control input-sm" placeholder="Enter Keyword">
 				</div>
 								
 			</div>
@@ -265,11 +276,11 @@
 			
 			<div class="form-group">
 				<div class="col-md-3">
-					<label for="SORT" class="control-label">Search and Sort: </label>
+					<label for="KwAdvSort" class="control-label">Search and Sort: </label>
 				</div>
 				
 				<div class="col-md-9">
-					<select name="SORT" id="SORT" class="form-control input-sm">
+					<select name="SORT" id="KwAdvSort" class="form-control input-sm">
 						<option value="D" selected="selected">sorted by relevance</option>
 						<option value="DX">sorted by date</option>
 						<option value="AX">sorted by title</option>
@@ -290,11 +301,15 @@
 			<div class="form-group">
 				
 				<div class="col-md-3">
-				<label for="Da" class="control-label">Year: </label>
+				<label for="Da" class="control-label">Later Than: </label>
 				</div>
 				
 				<div class="col-md-2">
 					<input class="input-sm form-control" type="text" size="10" name="Da" id="Da" value="" placeholder="Year After">
+				</div>
+
+				<div class="col-md-3">
+				<label for="Db" class="control-label">Earlier Than: </label>
 				</div>
 				
 				<div class="col-md-2">
@@ -426,6 +441,7 @@
 					</div>
 					
 					<div class="col-md-3">
+						<label for="sortdropdown_title" class="visuallyhidden"> Sort: </label>
 						<select name="sortdropdown" id="sortdropdown_title" class="form-control">
 							<option value="-">System Sorted</option> 
 							<option value="t"> Title</option> 
@@ -550,6 +566,7 @@ if (targ.form)
 					</div>
 					
 					<div class="col-md-3">
+						<label for="sortdropdown_author" class="visuallyhidden"> Sort: </label>
 						<select name="sortdropdown" id="sortdropdown_author" class="form-control">
 							<option value="-">System Sorted</option> 
 							<option value="t"> Title</option> 
@@ -608,6 +625,7 @@ if (targ.form)
 					</div>
 					
 					<div class="col-md-3">
+						<label for="sortdropdown_subject" class="visuallyhidden"> Sort: </label>
 						<select name="sortdropdown" id="sortdropdown_subject" class="form-control">
 							<option value="-">System Sorted</option> 
 							<option value="t"> Title</option> 
@@ -653,6 +671,7 @@ if (targ.form)
 					</div>
 					
 					<div class="col-md-3">
+						<label for="sortdropdown_medsubject" class="visuallyhidden"> Sort: </label>
 						<select name="sortdropdown" id="sortdropdown_medsubject" class="form-control">
 							<option value="-">System Sorted</option> 
 							<option value="t"> Title</option> 
@@ -698,6 +717,7 @@ if (targ.form)
 					</div>
 					
 					<div class="col-md-3">
+						<label for="sortdropdown_childsubject" class="visuallyhidden"> Sort: </label>
 						<select name="sortdropdown" id="sortdropdown_childsubject" class="form-control">
 							<option value="-">System Sorted</option> 
 							<option value="t"> Title</option> 
@@ -756,6 +776,7 @@ if (targ.form)
 					</div>
 					
 					<div class="col-md-3">
+						<label for="sortdropdown_call_number" class="visuallyhidden"> Sort: </label>
 						<select name="sortdropdown" id="sortdropdown_call_number" class="form-control">
 							<option value="-">System Sorted</option> 
 							<option value="t"> Title</option> 
@@ -801,6 +822,7 @@ if (targ.form)
 					</div>
 					
 					<div class="col-md-3">
+						<label for="sortdropdown_dewey_number" class="visuallyhidden"> Sort: </label>
 						<select name="sortdropdown" id="sortdropdown_dewey_number" class="form-control">
 							<option value="-">System Sorted</option> 
 							<option value="t"> Title</option> 
@@ -845,6 +867,7 @@ if (targ.form)
 					</div>
 					
 					<div class="col-md-3">
+						<label for="sortdropdown_govdoc_number" class="visuallyhidden"> Sort: </label>
 						<select name="sortdropdown" id="sortdropdown_govdoc_number" class="form-control">
 							<option value="-">System Sorted</option> 
 							<option value="t"> Title</option> 
@@ -889,6 +912,7 @@ if (targ.form)
 					</div>
 					
 					<div class="col-md-3">
+						<label for="sortdropdown_isbn" class="visuallyhidden"> Sort: </label>
 						<select name="sortdropdown" id="sortdropdown_isbn" class="form-control">
 							<option value="-">System Sorted</option> 
 							<option value="t"> Title</option> 
@@ -934,6 +958,7 @@ if (targ.form)
 					</div>
 					
 					<div class="col-md-3">
+						<label for="sortdropdown_oclc" class="visuallyhidden"> Sort: </label>
 						<select name="sortdropdown" id="sortdropdown_oclc" class="form-control">
 							<option value="-">System Sorted</option> 
 							<option value="t"> Title</option> 
@@ -978,6 +1003,7 @@ if (targ.form)
 					</div>
 					
 					<div class="col-md-3">
+						<label for="sortdropdown_local_call" class="visuallyhidden"> Sort: </label>
 						<select name="sortdropdown" id="sortdropdown_local_call" class="form-control">
 							<option value="-">System Sorted</option> 
 							<option value="t"> Title</option> 
