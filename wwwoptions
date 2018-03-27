@@ -595,11 +595,11 @@ ICON_BUT_PREVSCRN11=<div class="ICON_BUT_PREVSCRN btn btn-default catnav"><i cla
 ICON_BUT_RET2FEAT11=<div class="ICON_BUT_RET2FEAT btn btn-default catnav"><i class="fa fa-long-arrow-left fa-sm"></i> Back </div>
 ICON_BUT_PREVSCRN=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Back</span></span>
 ICON_BUT_RET2FEAT=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Back</span></span>
-FEATURED_LIST=311,77|FEATURED LISTS|CATEGORY|# of Titles
+FEATURED_LIST=311,75,80|FEATURED LISTS|CATEGORY|# of Titles
 
 # Content Linking and Other Resources
 # If your system uses SSL, use the https example, to avoid secure/nonsecure warning on Internet Explorer.
-BIBIMAGE=http://www.syndetics.com/index.aspx?isbn=%s/SC.GIF&client=trumanstateu|i|http://www.syndetics.com/index.aspx?isbn=%s/index.html&client=trumanstateu&type=rn12 
+BIBIMAGE=http://www.syndetics.com/index.aspx?isbn=%s/SC.GIF&client=ucmmob&showCaptionBelow=t|i|http://www.syndetics.com/index.aspx?isbn=%s/index.html&client=ucmmob&type=rn12 
 
 BIBIMAGE_TEXT11=Click for larger image
 BUT_ENCYCPD=/screens/encycpd.gif
@@ -763,6 +763,12 @@ ICON_HIDE_ADDITIONAL_SESSIONS=<span class="button"><span class="buttonText">Hide
 ICON_PROGRAM_CAL=<span class="button"><img src="/screens/ico_calendar.png" alt=""><span class="buttonText">Events Calendar</span></span>
 TABLEPARAM_PROG_SECTIONS=width="100%" border="0" cellspacing="0" align="center"
 
+# ArticleReach
+ARTICLEREACH_CENTRALS=arlir.iii.com
+ARTICLEREACH_LABELS=1|2|14|15  
+ICON_ARTICLEREACH=Request Article
+ICON_MYARTICLEREACH=<span class="button"><img src="/screens/media_periodicalsmall.gif" alt=""><span class="buttonText">Article Requests</span></span>
+
 # Scoping
 
 LOCKSCOPE=no
@@ -837,5 +843,5 @@ LOC_varii=/screens/teacher.pdf
 LOC_vavii=/screens/teacher.pdf
 LOC_vapii=/screens/teacher.pdf
 # FOR Encore
-PATFEEDS_MT=10.17.202.31
+PATFEEDS_MT=10.17.202.46
 IPSSO_USEHTML=t
