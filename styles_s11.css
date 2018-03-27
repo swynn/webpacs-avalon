@@ -108,14 +108,17 @@ border-left:none;
 }
 
 .browseHeaderData{
+background: #5C3278;
 border-right: solid white medium;				
 }
 
 .browseHeaderEntries {
+background: #5C3278;
 border-left: solid white medium;
 padding: 5px;			
 }
 .browseHeaderMark{
+background: #5C3278;
 border-right: solid white medium;			
 }
 
@@ -125,10 +128,12 @@ padding: 10px
 }
 
 .browseHeaderNum{
+background: #5C3278;
 border-right: solid white medium;
 }
 
 .browseHeaderYear {
+background: #5C3278;
 padding: 10px;
 }
 
@@ -349,6 +354,17 @@ border-right: 2px solid black;
 
 .patroninfodisplay{
 text-align: right;
+}
+
+.visuallyhidden{
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
 }
 
 select#needby_Day {
