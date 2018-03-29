@@ -22,6 +22,10 @@
     width:1067px;
 }
 
+#patButFines{
+display: none;
+}
+
 .topLogo img {
     display:block; 
 }
