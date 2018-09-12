@@ -84,7 +84,6 @@ CUSTOM_MESSAGES=F
 STARTOVER=/search
 STATGROUP=login
 STYLESHEET=/screens/styles.css
-STYLESHEET11=/screens/styles_s11.css
 SUPPRESS_OPTION=STARTOVER,ANOTHER,NEWSRCH
 TIMEOUT=300;URL=/search/
 TOPLOGO=@screens/toplogo.html
