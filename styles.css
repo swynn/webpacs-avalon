@@ -50,6 +50,10 @@ For 10pt, apply .7353em
 
 #idHelpButton p { border:1px #1d4069 solid; margin:0; }
 
+#pinInst {margin-top: 5px;}
+
+#pinInst p { font-size: 80%; font-weight: bold;}
+
 a img {border:none;}
 
 body { font-family:"Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; font-size:85%; font-style:normal; font-weight: normal; height:100%; text-align:center; width:100%; margin-top:0px; background:#FFFFFF }

@@ -119,7 +119,6 @@ ICON_BUT_WORDSRCH=<span class="button"><img src="/screens/ico_magnifyingglass.pn
 DROP_DOWN=Xatscegiofdjm
 #Quest
 #DROP_DOWN=Xtasldmcefgio
-FRAMEURL=0
 IBROWSE_MAX=10000
 KEYWORD_COLOR=Y|all|red
 MULT_LIMITS=true

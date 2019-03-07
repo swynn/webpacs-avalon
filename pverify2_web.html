@@ -100,8 +100,13 @@ Type your FULL ID number plus your campus code: ATSU(staff), CMU, CS, HLG, KCOM(
 <!--{pinprompt}-->
 <!--{pin}-->
 <span class="formLabelExample">
-<!--{pininstructions}-->
+Type your PIN*. 
+ 
 </span>
+
+<div id="pinInst">
+<p>*If you do not have a PIN, leave this field blank. You will then be prompted to create one after clicking "Submit." If you have forgotten your PIN, click the link below to reset it.</p>
+</div>
 </div>
 
 <!--{xif}-->
@@ -117,6 +122,48 @@ Type your FULL ID number plus your campus code: ATSU(staff), CMU, CS, HLG, KCOM(
 <!--{pinresetrequest}-->
 <!--{xif}-->
 <!--{submit}-->
+<input type="submit" class="submitHidden">
+</div>
+<a class="openmodalbox" href="javascript:void(0);">
+<div id="idHelpButton">
+<p>Avalon</p>
+<p>PIN Help</p>
+</div>
+    <span class="modalboxContent">
+<h3>A valid PIN consists of up to 30 alphanumeric characters.</h3> 
+    <p>The PIN must not contain common trivial patterns. For example:</p>
+
+<ul>
+    <li>A character that is consecutively repeated three or more times(for example, aaaa, ababa, bbbb).</li>
+    <li>A set of up to four characters is that is consecutively repeated two or more times (for example, abab, abcabc, abcdabcd).</li>
+</ul>
+
+    </span>
+</a>
+</fieldset>
+<!--{formend}-->
+
+</div>
+<div id="loginHelp">
+
+    
+		<a name="idhelp">
+                    <strong>Campus ID Help</strong></a>
+  <p>Type your ID number (dashes are not necessary) plus your institution code. </p>
+					   <ul>
+					      <li>A.T. Still University - ATSU (staff), KCOM (students)</li>
+						  <li>Central Methodist University - CMU</li>
+						  <li>Culver-Stockton College - CS</li>
+						  <li>Hannibal-LaGrange University - HLG</li>
+						  <li>Missouri Valley College - MVC</li>
+						  <li>Moberly Area Community College - MACC</li>
+						  <li>State Fair Community College - SFCC</li>
+						  <li>State Technical College of Missouri - 00 + State Tech ID + STC. For example, if your State Tech ID is 123456, enter 00123456STC.</li>
+						  <li>Truman State University - TSU</li>
+						  <li>University of Central Missouri - UCM</li>
+					  
+					   </ul>
+				  <p>For example: 999999999MVC would be a Campus ID for a student at Missouri Valley College.</p>
 </div>
 </fieldset>
 </form>
