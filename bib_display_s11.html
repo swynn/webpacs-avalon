@@ -21,15 +21,15 @@
 
 		// Gets record number from permanent link
 		var cluster_recno = recno_pattern.exec($(".ICON_RECORDLINK").children("a").attr("href"));
-		var bibno_fetcher_url = 'http://library.truman.edu/Mobius/encore_bibno_fetcher.php?bibno=' + cluster_recno;
+		var bibno_fetcher_url = 'https://library.truman.edu/Mobius/encore_bibno_fetcher.php?bibno=' + cluster_recno;
 		
 		// Get MOBIUS bib number via php
-		$.get('http://library.truman.edu/Mobius/encore_bibno_fetcher.php?bibno=' + cluster_recno, function( data ) {
+		$.get('https://library.truman.edu/Mobius/encore_bibno_fetcher.php?bibno=' + cluster_recno, function( data ) {
 			var encore_regex = /b\d{8}/;
 			encore_recno = encore_regex.exec(data);
 					
 			if (encore_recno) {
-				var encore_link = "http://encore.searchmobius.org/iii/encore/record/C__R" + encore_recno;
+				var encore_link = "https://encore.searchmobius.org/iii/encore/record/C__R" + encore_recno;
 				$("#ICON_INNREACH").parent().attr("href",encore_link);
 			}
 		});
@@ -41,6 +41,7 @@
 		// Get item information
 		var allRows = document.getElementsByTagName('tr');
 		var locatorRow = new Array();
+		var items_found = 0;
 		
 		// Fill array locatorRow with rows having class "bibItemsEntry"
 		for (tr_index = 0; tr_index < allRows.length; tr_index++)
@@ -57,24 +58,26 @@
 		}
 		
 		// Iterate through items table via locatorRow array
-		for (row_index = 0; row_index < locatorRow.length; row_index++)
-		{
-			var locCell = locatorRow[row_index].cells[0]; // the location
-			var callCell = locatorRow[row_index].cells[1]; // the call number
-			var noteCell = locatorRow[row_index].cells[2]; //notes
-			var statusCell = locatorRow[row_index].cells[3]; //the status
-		
-			var locText = locatorRow[row_index].cells[0].textContent;
-			var callText = locatorRow[row_index].cells[1].textContent;
-			var statusText = locatorRow[row_index].cells[3].textContent;
-
-			var locRegex = /TRUMAN ([a-zA-Z ]*)/;
-			// var callnoRegex = /^([A-Z]*) ?(\d*)/;
-			var collection = locText.match(locRegex);
+		if (locatorRow.length > 0) {
+			for (row_index = 0; row_index < locatorRow.length; row_index++)
+			{
+				// var locCell = locatorRow[row_index].cells[0]; // the location
+				// var callCell = locatorRow[row_index].cells[1]; // the call number
+				// var noteCell = locatorRow[row_index].cells[2]; //notes
+				// var statusCell = locatorRow[row_index].cells[2]; //the status
 			
-			if (collection == "General Collection") {
-				callCell.innerHTML = callCell.innerHTML + "<a href=\"http://library.truman.edu/map.php?collection=" + collection + "&callno=" + callText + "&status=" + statusText + "\">";
-				callCell.innerHTML = callCell.innerHTML + "<img src=\"mapit.png\" /></a>";
+				var locText = locatorRow[row_index].cells[0].textContent;
+				var callText = locatorRow[row_index].cells[1].textContent;
+				var statusText = locatorRow[row_index].cells[2].textContent;
+
+				var locRegex = /TRUMAN ([a-zA-Z ]*)/;
+				// var callnoRegex = /^([A-Z]*) ?(\d*)/;
+				var collection = locText.match(locRegex);
+				
+				if (collection == "General Collection") {
+					callCell.innerHTML = callCell.innerHTML + "<a href=\"http://library.truman.edu/map.php?collection=" + collection + "&callno=" + callText + "&status=" + statusText + "\">";
+					callCell.innerHTML = callCell.innerHTML + "<img src=\"mapit.png\" /></a>";
+				}
 			}
 		}
 		
