@@ -119,7 +119,6 @@ ICON_BUT_WORDSRCH=<span class="button"><img src="/screens/ico_magnifyingglass.pn
 DROP_DOWN=Xatscegiofdjm
 #Quest
 #DROP_DOWN=Xtasldmcefgio
-FRAMEURL=0
 IBROWSE_MAX=10000
 KEYWORD_COLOR=Y|all|red
 MULT_LIMITS=true
@@ -819,29 +818,31 @@ LOC_tpt*=/screens/tpt.htm "target=_blank"
 LOC_tpvii=/screens/tpvii.htm "target=_blank"
 LOC_tpxii=/screens/tpxii.htm "target=_blank" 
 LOC_tpyii=/screens/tpyii.htm "target=_blank" 
-LOC_tpz*=/screens/tpz.htm "target=_blank" 
-LOC_vmrii=/screens/murrell1.pdf
-LOC_vmroi=/screens/murrell1.pdf
-LOC_vmrri=/screens/murrell1.pdf
-LOC_vmsii=/screens/murrell1.pdf
-LOC_vmvii=/screens/murrell1.pdf
-LOC_vmvli=/screens/murrell1.pdf
-LOC_vmxii=/screens/murrell1.pdf
-LOC_vscii=/screens/murrell1.pdf
-LOC_vmaii=/screens/murrell2.pdf
-LOC_vmfii=/screens/murrell2.pdf
-LOC_vmiii=/screens/murrell2.pdf
-LOC_vmkii=/screens/murrell2.pdf
+LOC_tpz*=/screens/tpz.htm "target=_blank"
+LOC_vmcii=/screens/vmcii-youngadult.pdf 
+LOC_vmrii=/screens/vmrii-readyref.pdf
+LOC_vmroi=/screens/vmroi-refoffice.pdf
+LOC_vmrri=/screens/vmrii-reference.pdf
+LOC_vmsii=/screens/vmsii-equipment.pdf
+LOC_vmvii=/screens/vmvii-audiovisual.pdf
+LOC_vmvli=/screens/vmvli-popvideo.pdf
+LOC_vmxii=/screens/vmxii-reserve.pdf
+LOC_vscii=/screens/vscii-audiobooks.pdf
+LOC_vmaii=/screens/vmaii-archives.pdf
+LOC_vmfii=/screens/vmfii-art.pdf
+LOC_vmiii=/screens/vmiii-main.pdf
+LOC_vmkii=/screens/vmkii-career.pdf
 LOC_vmlii=/screens/murrell2.pdf
-LOC_vmmii=/screens/murrell2.pdf
-LOC_vmpci=/screens/murrell2.pdf
-LOC_vmpii=/screens/murrell2.pdf
-LOC_vacii=/screens/teacher.pdf
-LOC_vajii=/screens/teacher.pdf
-LOC_vaiii=/screens/teacher.pdf
-LOC_varii=/screens/teacher.pdf
-LOC_vavii=/screens/teacher.pdf
-LOC_vapii=/screens/teacher.pdf
+LOC_vmmii=/screens/vmmii-ashford.pdf
+LOC_vmpci=/screens/vmpci-currentper.pdf
+LOC_vmpii=/screens/vmpii-periodicals.pdf
+LOC_vaaii=/screens/vaaii-awardwinners.pdf
+LOC_vacii=/screens/vacii-curriculum.pdf
+LOC_vajii=/screens/vajii-juvenile.pdf
+LOC_vaiii=/screens/vaiii-commons.pdf
+LOC_varii=/screens/varii-commonsreference.pdf
+LOC_vavii=/screens/vavii-commons-av.pdf
+LOC_vapii=/screens/vapii-commonsperiodicals.pdf
 # FOR Encore
 PATFEEDS_MT=10.17.202.46
 IPSSO_USEHTML=t
