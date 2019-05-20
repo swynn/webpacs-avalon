@@ -15,7 +15,7 @@
 
 	addLoadEvent( function() {
 		
-		var cluster = '6lanc';
+		var cluster = '6ques';
 		var recno_pattern = /b\d{7}/;
 		var encore_recno = "";
 
@@ -33,7 +33,52 @@
 				$("#ICON_INNREACH").parent().attr("href",encore_link);
 			}
 		});
-	});			
+	});	
+
+	addLoadEvent( function() {
+	
+		// Function adds "map-it" button(s) to items table
+		// Get item information
+		var allRows = document.getElementsByTagName('tr');
+		var locatorRow = new Array();
+		
+		// Fill array locatorRow with rows having class "bibItemsEntry"
+		for (tr_index = 0; tr_index < allRows.length; tr_index++)
+		{
+			var thisRow = allRows[tr_index];
+			if (typeof(thisRow) == "object")
+			{
+				if(thisRow.className == "bibItemsEntry")
+				{	
+					// this contains the location/call number
+					locatorRow.push(thisRow);
+				}
+			}
+		}
+		
+		// Iterate through items table via locatorRow array
+		for (row_index = 0; row_index < locatorRow.length; row_index++)
+		{
+			var locCell = locatorRow[row_index].cells[0]; // the location
+			var callCell = locatorRow[row_index].cells[1]; // the call number
+			var noteCell = locatorRow[row_index].cells[2]; //notes
+			var statusCell = locatorRow[row_index].cells[3]; //the status
+		
+			var locText = locatorRow[row_index].cells[0].textContent;
+			var callText = locatorRow[row_index].cells[1].textContent;
+			var statusText = locatorRow[row_index].cells[3].textContent;
+
+			var locRegex = /TRUMAN ([a-zA-Z ]*)/;
+			// var callnoRegex = /^([A-Z]*) ?(\d*)/;
+			var collection = locText.match(locRegex);
+			
+			if (collection == "General Collection") {
+				callCell.innerHTML = callCell.innerHTML + "<a href=\"http://library.truman.edu/map.php?collection=" + collection + "&callno=" + callText + "&status=" + statusText + "\">";
+				callCell.innerHTML = callCell.innerHTML + "<img src=\"mapit.png\" /></a>";
+			}
+		}
+		
+	})	
 
 </script>
 
