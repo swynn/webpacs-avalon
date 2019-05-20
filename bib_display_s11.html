@@ -68,7 +68,8 @@
 			
 				var locText = locatorRow[row_index].cells[0].textContent;
 				var callText = locatorRow[row_index].cells[1].textContent;
-				var statusText = locatorRow[row_index].cells[2].textContent;
+				var noteCell = locatorRow[row_index].cells[2]; //notes
+				var statusCell = locatorRow[row_index].cells[3]; //the status
 
 				var locRegex = /TRUMAN ([a-zA-Z ]*)/;
 				// var callnoRegex = /^([A-Z]*) ?(\d*)/;
