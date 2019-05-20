@@ -23,6 +23,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script type="text/javascript" src='/screens/qr.js'> </script> 
 <script type="text/javascript">
 $(document).ready(function () {
+
+var illLink = '<a href="https://universityofcentralmissourilibrary.account.worldcat.org/profile">Interlibrary Loan</a>';
+$(".navRight a[href='http://searchmobius.org']").replaceWith(illLink);
+$(".navigationRow a, .navigationRowRecord a, .miscButtons a, .yourEntryWouldBeHere a").each(function(){
+if(this.href.indexOf('searchmobius.org/iii/encore') != -1){
+$(this).replaceWith(illLink);
+}
+});
+
+$(".navRight a[href='/']").hide();
+
     $("#searcharg").click(function(){
 
 $(this).select();
