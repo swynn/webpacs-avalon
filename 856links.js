@@ -2,8 +2,7 @@ function hideLinks(){
     
     var stringsToHide = new Array ();
     stringsToHide[1] = new Array ("centralmethodist");
-    stringsToHide[2] = new Array ("ucmo");
-	stringsToHide[3] = new Array ("Missouri Valley eBook", "moval");
+    stringsToHide[3] = new Array ("Missouri Valley eBook", "moval");
 	stringsToHide[4] = new Array ("State Fair eBook");
 	stringsToHide[6] = new Array ("atsu");
 	stringsToHide[7] = new Array ("culver");
